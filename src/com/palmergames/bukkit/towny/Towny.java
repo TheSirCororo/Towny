@@ -169,8 +169,6 @@ public class Towny extends JavaPlugin {
 				TownySettings.setLastRunVersion(getVersion());
 				// Save database.
 				townyUniverse.getDataSource().saveAll();
-				// cleanup() updates SQL schema for any changes.
-				townyUniverse.getDataSource().cleanup();
 			}
 
 			// Register all child permissions for ranks

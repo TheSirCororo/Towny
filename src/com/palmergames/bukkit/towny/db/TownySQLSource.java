@@ -141,6 +141,8 @@ public final class TownySQLSource extends TownyDatabaseHandler {
 		 * Initialise database Schema.
 		 */
 		SQL_Schema.initTables(cntx, db_name);
+		
+		cleanup();
 
 		/*
 		 * Start our Async queue for pushing data to the database.
@@ -439,7 +441,6 @@ public final class TownySQLSource extends TownyDatabaseHandler {
 		return false;
 	}
 
-	@Override
 	public boolean cleanup() {
 
 		/*

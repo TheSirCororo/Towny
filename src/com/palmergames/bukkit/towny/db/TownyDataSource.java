@@ -142,12 +142,6 @@ public abstract class TownyDataSource {
 	
 	abstract public void deletePlotGroup(PlotGroup group);
 
-	public boolean cleanup() {
-
-		return true;
-
-	}
-
 	public boolean loadResidents() {
 
 		TownyMessaging.sendDebugMsg("Loading Residents");
