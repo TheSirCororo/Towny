@@ -277,6 +277,9 @@ public class Towny extends JavaPlugin {
 		
 		// Reset player cache.
 		resetCache();
+		
+		//Check for plugin updates
+		TownyUpdateChecker.checkForUpdates(this);
 
 		return true;
 	}
